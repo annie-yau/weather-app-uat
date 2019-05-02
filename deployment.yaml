@@ -21,4 +21,4 @@ spec:
         ports:
         - containerPort: 8080
       imagePullSecrets:
-      - name: nexus-registry-secret
+      - name: nexus-registry-secret-uat
