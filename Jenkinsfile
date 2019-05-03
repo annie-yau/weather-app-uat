@@ -1,5 +1,14 @@
 pipeline {
     agent any
+    
+    triggers {
+        GenericTrigger(
+         token: 'deploy-to-uat',     
+         printContributedVariables: true,
+         printPostContent: true,
+         silentResponse: false
+        )
+      }
 
    stages {       
               
